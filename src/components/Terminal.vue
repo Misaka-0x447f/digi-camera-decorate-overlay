@@ -15,6 +15,7 @@
     display flex
     align-items flex-end
     height 3em
+    line-height 1em
   }
 </style>
 <script lang="ts">

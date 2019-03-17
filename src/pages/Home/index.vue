@@ -1,30 +1,41 @@
 <template lang="pug">
   div.root
     div.container
-      div.big {{e("intro")}}
-      div {{e("start")}}
-      field(link="http://misaka.org")
+      div.block
+        div.subBlock
+          term
+        div.subBlock.right
+          timer
+          div {{e("streaming")}}
+      div.block
+        div.subBlock
+        div.subBlock.right.bottom
 </template>
 <style lang="stylus" scoped>
-  .container
+  .block
     display flex
-    flex-direction column
-    align-items center
-    justify-content center
-    font-family Consolas
-  .big
-    font-size 2em
+    text-align left
+  .subBlock
+    flex 1
+  .subBlock.right
+    justify-content flex-end
+  .subBlock.right.bottom
+    align-items flex-end
+  
+  .right
+    text-align: right;
 </style>
 <script lang="ts">
-  // @/ is an alias to /src/
   import Vue from "vue";
-  import Author from "@/components/Author.vue";
   import say from "@/utils/i18n";
-
+  import timer from "@/components/AutoTimer.vue";
+  import term from "@/components/Terminal.vue";
+  
   export default Vue.extend({
     name: "home",
     components: {
-      field: Author
+      timer,
+      term
     },
     data: () => {
       return {

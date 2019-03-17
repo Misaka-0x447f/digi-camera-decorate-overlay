@@ -9,10 +9,12 @@
     "inspect-webpack-config": "vue-cli-service inspect > webpack-config-readable.txt"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.123",
     "@vue/cli-plugin-typescript": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
     "style-resources-loader": "^1.2.1",

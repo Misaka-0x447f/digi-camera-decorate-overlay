@@ -1,5 +1,5 @@
 <template lang="pug">
-  router-view
+  router-view.root
 </template>
 <style lang="stylus">
   body
@@ -10,16 +10,21 @@
     display flex
     align-content center
     justify-content center
-    font-family 'Avenir', Helvetica, Arial, sans-serif
+    font-family "Consolas", monospace
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
     text-align center
     color plain-text-0
-
+    font-size 20px
+    
   a
     color link-text-0
     text-decoration none
 
   a:hover
-    color link-text-hover-0 
+    color link-text-hover-0
+  
+  .root {
+    width: 100%;
+  }
 </style>

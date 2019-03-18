@@ -16,6 +16,7 @@
     text-align center
     color plain-text-0
     font-size 20px
+    text-shadow: 2px 2px 1px #cba;
     
   a
     color link-text-0

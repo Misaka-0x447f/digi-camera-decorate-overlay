@@ -1,17 +1,16 @@
 <template lang="pug">
-  span.container
-    span.hh(:class="{zero: hh === 0}") {{pad(hh)}}:
-    span.mm(:class="{zero: mm === 0 && hh === 0}") {{pad(mm)}}:
-    span.ss(:class="{zero: ss === 0 && mm === 0 && ss === 0}") {{pad(ss)}}
+  span.root
+    span.container
+      span.t.hh(:class="{zero: hh === 0}") {{pad(hh)}}:
+      span.t.mm(:class="{zero: mm === 0 && hh === 0}") {{pad(mm)}}:
+      span.t.ss(:class="{zero: ss === 0 && mm === 0 && ss === 0}") {{pad(ss)}}
 </template>
 <style lang="stylus" scoped>
-  .container {
-    font-size 1.6em
-  }
+  .container
+    font-size l
   
-  .zero {
+  .zero
     opacity 0.2
-  }
 </style>
 <script lang="ts">
   import Vue from "vue";

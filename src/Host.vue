@@ -10,7 +10,7 @@
     display flex
     align-content center
     justify-content center
-    font-family "Consolas", monospace
+    font-family "Consolas", "Microsoft JhengHei UI Light", monospace
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
     text-align center
